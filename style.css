@@ -1,6 +1,6 @@
-/* Base Variables */
+
 :root {
-    /* Colors */
+
     --primary-color: #6c63ff;
     --primary-light: #8a85ff;
     --primary-dark: #4d46b3;
@@ -14,48 +14,48 @@
     --text-light: #6c757d;
     --text-dark: #212529;
     
-    /* Gradients */
+
     --gradient-primary: linear-gradient(135deg, #6c63ff 0%, #8a85ff 100%);
     --gradient-accent: linear-gradient(135deg, #ff6584 0%, #ff8e53 100%);
     
-    /* Glass Effects */
+    
     --glass-bg: rgba(255, 255, 255, 0.1);
     --glass-border: rgba(255, 255, 255, 0.2);
     --glass-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
     --glass-blur: blur(10px);
     
-    /* Typography */
+
     --font-primary: 'Poppins', sans-serif;
     --font-secondary: 'Montserrat', sans-serif;
     --font-size-base: 1rem;
     --line-height-base: 1.6;
     
-    /* Spacing */
+
     --space-xs: 0.5rem;
     --space-sm: 1rem;
     --space-md: 1.5rem;
     --space-lg: 2rem;
     --space-xl: 3rem;
     
-    /* Borders */
+    
     --border-radius-sm: 0.5rem;
     --border-radius-md: 1rem;
     --border-radius-lg: 1.5rem;
     --border-radius-circle: 50%;
     
-    /* Shadows */
+ 
     --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.1);
     --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.15);
     --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.2);
     --shadow-inset: inset 0 2px 4px rgba(0, 0, 0, 0.1);
     
-    /* Transitions */
+    
     --transition-fast: 0.2s ease;
     --transition-normal: 0.3s ease;
     --transition-slow: 0.5s ease;
 }
 
-/* Dark Mode */
+
 .dark-mode {
     --dark-color: #f8f9fa;
     --dark-light: #e9ecef;
@@ -69,7 +69,7 @@
     --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
 }
 
-/* Base Styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -121,7 +121,7 @@ section {
     position: relative;
 }
 
-/* Background Elements */
+
 .bg-blur-1, .bg-blur-2 {
     position: fixed;
     width: 300px;
@@ -226,16 +226,16 @@ header {
     left: 0;
     width: 100%;
     z-index: 1000;
-    background: rgba(255, 255, 255, 0.1); /* Glass background */
-    backdrop-filter: blur(12px); /* Glass blur effect */
-    -webkit-backdrop-filter: blur(12px); /* For Safari */
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15); /* Subtle shadow */
-    border: 1px solid rgba(255, 255, 255, 0.18); /* Glass border */
+    background: rgba(255, 255, 255, 0.1); 
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.18); 
     padding: 1rem 0;
     transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
   }
   
-  /* Dark mode glass effect */
+ 
   .dark-mode header {
     background: rgba(26, 26, 46, 0.7);
     border: 1px solid rgba(255, 255, 255, 0.05);
@@ -363,7 +363,7 @@ header {
     transform-origin: center;
   }
   
-  /* Mobile menu styles */
+  
   @media (max-width: 768px) {
     .nav-links {
       position: fixed;
@@ -411,7 +411,7 @@ header {
       transform: translateY(-7px) rotate(-45deg);
     }
   }
-/* Hero Section */
+
 .hero {
     min-height: 100vh;
     display: flex;
@@ -678,7 +678,7 @@ header {
     }
 }
 
-/* About Section */
+
 .about {
     background: var(--glass-bg);
     backdrop-filter: var(--glass-blur);
@@ -791,7 +791,7 @@ header {
     color: var(--text-light);
 }
 
-/* Skills Section */
+
 .skills {
     position: relative;
     overflow: hidden;
@@ -1075,7 +1075,7 @@ header {
     color: var(--text-light);
 }
 
-/* Contact Section */
+
 .contact-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -1193,7 +1193,7 @@ header {
     min-height: 150px;
 }
 
-/* Footer */
+
 footer {
     background: var(--dark-light);
     color: var(--light-color);
@@ -1247,7 +1247,7 @@ footer {
     font-size: 0.9rem;
 }
 
-/* Responsive Styles */
+
 @media (max-width: 992px) {
     .hero-content {
         flex-direction: column;

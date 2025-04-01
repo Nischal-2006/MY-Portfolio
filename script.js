@@ -1,8 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Set current year in footer
+
     document.getElementById('current-year').textContent = new Date().getFullYear();
     
-    // Theme toggle functionality
     const themeToggle = document.getElementById('theme-toggle');
     const themeIcon = themeToggle.querySelector('i');
     
@@ -20,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     
-    // Check for saved theme preference
+   
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme === 'dark') {
         document.body.classList.add('dark-mode');
@@ -28,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
         themeIcon.classList.add('fa-sun');
     }
     
-    // Mobile menu toggle
+  
     const hamburger = document.querySelector('.hamburger');
     const navLinks = document.querySelector('.nav-links');
     
@@ -37,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
         navLinks.classList.toggle('active');
     });
     
-    // Close mobile menu when clicking a link
+   
     const navItems = document.querySelectorAll('.nav-links a');
     navItems.forEach(item => {
         item.addEventListener('click', function() {
@@ -48,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Header scroll effect
+    
     window.addEventListener('scroll', function() {
         const header = document.querySelector('header');
         if (window.scrollY > 50) {
@@ -58,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     
-    // Typewriter effect
+   
     const typewriter = document.querySelector('.typewriter .typed-text');
     const cursor = document.querySelector('.typewriter .cursor');
     const words = ['Web Developer', 'UI/UX Enthusiast', 'CSIT Student'];
@@ -75,15 +74,15 @@ document.addEventListener('DOMContentLoaded', function() {
         cursor.classList.add('blink');
         
         if (!isDeleting && charIndex < currentWord.length) {
-            // Typing
+           
             charIndex++;
             setTimeout(type, 100);
         } else if (isDeleting && charIndex > 0) {
-            // Deleting
+            
             charIndex--;
             setTimeout(type, 50);
         } else {
-            // Change word
+         
             isDeleting = !isDeleting;
             cursor.classList.remove('blink');
             
@@ -95,10 +94,10 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
     
-    // Start the typewriter effect
+
     setTimeout(type, 1000);
     
-    // Animate skill progress bars when they come into view
+   
     const skillBars = document.querySelectorAll('.progress-bar');
     
     const observer = new IntersectionObserver((entries) => {
@@ -113,28 +112,26 @@ document.addEventListener('DOMContentLoaded', function() {
     
     skillBars.forEach(bar => observer.observe(bar));
     
-    // Form submission
+
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
             e.preventDefault();
             
-            // Get form data
+            
             const name = document.getElementById('name').value;
             const email = document.getElementById('email').value;
             const subject = document.getElementById('subject').value;
             const message = document.getElementById('message').value;
             
-            // Here you would typically send the data to a server
-            // For now, we'll just show an alert
             alert(`Thank you for your message, ${name}! I will get back to you soon.`);
             
-            // Reset form
+           
             contactForm.reset();
         });
     }
     
-    // Add smooth scrolling for anchor links
+
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             e.preventDefault();
@@ -152,7 +149,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Add hover effect for project cards
+    
     const projectCards = document.querySelectorAll('.project-card');
     projectCards.forEach(card => {
         card.addEventListener('mouseenter', function() {
@@ -164,6 +161,5 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Add loading animation
     document.body.classList.add('loaded');
 });
