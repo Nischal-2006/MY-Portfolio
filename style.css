@@ -1196,7 +1196,7 @@ header {
 
 footer {
     background: var(--dark-light);
-    color: var(--light-color);
+    color: var(--accent-color);
     padding: var(--space-xl) 0 0;
 }
 
@@ -1216,7 +1216,7 @@ footer {
 .footer-col h4 {
     font-size: 1.3rem;
     margin-bottom: var(--space-sm);
-    color: white;
+    color: var(--light-color);
 }
 
 .footer-col p {
