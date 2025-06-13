@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Portfolio of Nischal Panthi, Web Developer & UI/UX Enthusiast"
+      content="Portfolio of Nischal Panthi, UI/UX Designer & Frontend Developer"
     />
-    <meta name="keywords" content="portfolio, web developer, CSIT, Nepal" />
+    <meta name="keywords" content="portfolio, ui designer, ux designer, frontend developer, CSIT, Nepal" />
     <meta property="og:title" content="Nischal Panthi's Portfolio" />
     <meta
       property="og:description"
-      content="Web Developer & UI/UX Enthusiast"
+      content="UI/UX Designer & Frontend Developer"
     />
-    <title>Nischal Panthi | Web Developer</title>
+    <title>Nischal Panthi | UI/UX Designer & Developer</title>
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700&display=swap"
@@ -35,6 +35,8 @@
       <div class="particle"></div>
       <div class="particle"></div>
     </div>
+    
+    <!-- Header Section -->
     <header>
       <div class="container">
         <h1 class="logo">Nischal Panthi</h1>
@@ -42,7 +44,7 @@
           <ul class="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
-            <li><a href="#work">Work</a></li>
+            <li><a href="#work">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
           <button class="theme-toggle" id="theme-toggle">
@@ -57,6 +59,7 @@
       </div>
     </header>
 
+    <!-- Hero Section -->
     <section class="hero">
       <div class="container">
         <div class="hero-content">
@@ -68,8 +71,8 @@
               <span class="cursor">&nbsp;</span>
             </div>
             <p class="description">
-              A passionate web developer creating beautiful, functional digital
-              experiences. Currently studying BSc. CSIT at BMC.
+              A UI/UX Designer & Frontend Developer passionate about creating beautiful, 
+              intuitive digital experiences. Currently studying BSc. CSIT at BMC.
             </p>
             <div class="cta-buttons">
               <a href="#contact" class="btn primary-btn">
@@ -82,36 +85,16 @@
               </a>
             </div>
             <div class="social-links">
-              <a
-                href="https://github.com/Nischal-007np"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="GitHub"
-              >
+              <a href="https://github.com/Nischal-007np" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                 <i class="fab fa-github"></i>
               </a>
-              <a
-                href="www.linkedin.com/in/nischal-panthi"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="LinkedIn"
-              >
+              <a href="https://www.linkedin.com/in/nischal-panthi" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                 <i class="fab fa-linkedin-in"></i>
               </a>
-              <a
-                href="https://www.instagram.com/cris_nischal07/"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Instagram"
-              >
+              <a href="https://www.instagram.com/cris_nischal07/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                 <i class="fab fa-instagram"></i>
               </a>
-              <a
-                href="https://www.facebook.com/profile.php?id=100082418006579"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Facebook"
-              >
+              <a href="https://www.facebook.com/profile.php?id=100082418006579" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                 <i class="fab fa-facebook"></i>
               </a>
             </div>
@@ -119,13 +102,11 @@
           <div class="hero-image">
             <div class="profile-container">
               <div class="profile-overlay"></div>
-              <img
-                src="Developer.png"
-                alt="Nischal Panthi"
-                class="profile-img"
-                loading="eager"
-              />
+              <img src="Developer.png" alt="Nischal Panthi" class="profile-img" loading="eager" />
               <div class="tech-stack">
+                <div class="tech-icon" data-tooltip="Figma">
+                  <i class="fab fa-figma"></i>
+                </div>
                 <div class="tech-icon" data-tooltip="HTML5">
                   <i class="fab fa-html5"></i>
                 </div>
@@ -148,6 +129,7 @@
       </div>
     </section>
 
+    <!-- About Section -->
     <section id="about" class="about">
       <div class="container">
         <div class="section-header">
@@ -166,7 +148,7 @@
                 <i class="fas fa-award"></i>
                 <h5>Experience</h5>
                 <p>1+ Years</p>
-                <p>Web Development</p>
+                <p>UI/UX & Frontend</p>
               </div>
               <div class="edu-card">
                 <i class="fas fa-graduation-cap"></i>
@@ -176,16 +158,17 @@
               </div>
             </div>
             <p>
-              My name is Nischal Panthi, and I'm currently pursuing a BSc. in
-              Computer Science and Information Technology (CSIT) at BMC. I'm
-              passionate about web development and have taken training in basic
-              web development from the mentors of the CSIT Association.
+              I'm Nischal Panthi, a UI/UX Designer and Frontend Developer currently pursuing my BSc. in Computer Science
+              and Information Technology with focus on HCI and frontend development.
             </p>
             <p>
-              I believe in continuous learning and am constantly working to
-              improve my skills in front-end development. My goal is to create
-              beautiful, functional, and user-friendly websites that provide
-              great user experiences.
+              With skills in both design tools and frontend technologies, I can take projects from wireframes to 
+              fully responsive implementations. My technical background helps me create designs that are 
+              technically feasible while pushing creative boundaries.
+            </p>
+            <p>
+              When I'm not designing or coding, you can find me exploring new design systems, 
+              studying interaction patterns, or contributing to open source projects.
             </p>
             <a href="#contact" class="btn primary-btn">
               <span>Contact Me</span>
@@ -196,235 +179,633 @@
       </div>
     </section>
 
-    <section id="skills" class="skills">
-      <div class="container">
-        <div class="section-header center">
-          <h4 class="section-subtitle">Explore My</h4>
-          <h2 class="section-title">Skills <span>& Expertise</span></h2>
+    <!-- Skills Section -->
+    <!-- Technical Skills Section -->
+<section id="technical-skills" class="skills">
+  <div class="container">
+    <div class="section-header center">
+      <h4 class="section-subtitle">My Core</h4>
+      <h2 class="section-title">Technical <span>Expertise</span></h2>
+      <p class="section-description">Tools and technologies I use to bring ideas to life</p>
+    </div>
+    
+    <div class="skills-container">
+      <!-- Design Skills -->
+      <div class="skill-category">
+        <div class="category-header">
+          <i class="fas fa-pencil-ruler category-icon"></i>
+          <h3>Design Specialization</h3>
         </div>
-        <div class="skills-container">
-          <div class="skill-category">
-            <h3><i class="fas fa-laptop-code"></i> Technical Skills</h3>
-            <div class="skills-grid">
-                <div class="skill-item">
-                    <div class="skill-info">
-                      <div class="skill-icon">
-                        <i class="fab fa-figma"></i>
-                      </div>
-                    
-                    <h4>Figma</h4>
-                    <p>Creating UI/UX designs and prototypes</p>
-                    <div class="skill-progress">
-                      <div class="progress-bar" data-level="60"></div>
-                    </div>
-                    <span class="skill-percentage">60%</span>
-                    </div>
-                  </div>
-              <div class="skill-item">
-                
-                <div class="skill-info">
-                  <div class="skill-icon">
-                    <i class="fab fa-html5"></i>
-                  </div>
-                  <h4>HTML</h4>
-                  <p>BUilding the Skeleton of Web pages.</p>
-                  <div class="skill-progress">
-                    <div class="progress-bar" data-level="90"></div>
-                  </div>
-                  <span>90%</span>
-                </div>
+        <div class="skills-grid">
+          <!-- UI/UX Design -->
+          <div class="skill-item" data-skill="ui-ux">
+            <div class="skill-info">
+              <div class="skill-icon">
+                <i class="fab fa-figma"></i>
               </div>
-              <div class="skill-item">
-                <div class="skill-info">
-                  <div class="skill-icon">
-                    <i class="fab fa-css3-alt"></i>
-                  </div>
-                  <h4>CSS</h4>
-                  <p>Building structured and stylish Web pages.</p>
-                  <div class="skill-progress">
-                    <div class="progress-bar" data-level="65"></div>
-                  </div>
-                  <span>65%</span>
-                </div>
+              <div class="skill-details">
+                <h4>UI/UX Design</h4>
+                <p>Creating intuitive interfaces and user experiences</p>
               </div>
-              <div class="skill-item">
-                <div class="skill-info">
-                  <div class="skill-icon">
-                    <i class="fab fa-js"></i>
-                  </div>
-                  <h4>JavaScript</h4>
-                  <p>Creating interactive web experiences</p>
-                  <div class="skill-progress">
-                    <div class="progress-bar" data-level="50"></div>
-                  </div>
-                  <span>50%</span>
+              <div class="skill-meter">
+                <div class="skill-progress">
+                  <div class="progress-bar" data-level="85"></div>
                 </div>
+                <span class="skill-percentage">85%</span>
               </div>
             </div>
           </div>
-
-          <div class="skill-category">
-            <h3><i class="fas fa-brain"></i> Professional Skills</h3>
-            <div class="skills-grid">
-              <div class="skill-item">
-                <div class="skill-info">
-                  <div class="skill-icon">
-                    <i class="fas fa-comments"></i>
-                  </div>
-                  <h4>Communication</h4>
-                  <p>Clear written and verbal communication</p>
-                  <div class="skill-progress">
-                    <div class="progress-bar" data-level="85"></div>
-                  </div>
-                  <span>85%</span>
-                </div>
+          
+          
+          <div class="skill-item" data-skill="responsive-design">
+            <div class="skill-info">
+              <div class="skill-icon">
+                <i class="fas fa-mobile-alt"></i>
               </div>
-              <div class="skill-item">
-                <div class="skill-info">
-                  <div class="skill-icon">
-                    <i class="fas fa-users"></i>
-                  </div>
-                  <h4>Teamwork</h4>
-                  <p>Collaborating effectively in groups</p>
-                  <div class="skill-progress">
-                    <div class="progress-bar" data-level="78"></div>
-                  </div>
-                  <span>78%</span>
-                </div>
+              <div class="skill-details">
+                <h4>Responsive Design</h4>
+                <p>Designing for all screen sizes and devices</p>
               </div>
-              <div class="skill-item">
-                <div class="skill-info">
-                  <div class="skill-icon">
-                    <i class="fas fa-lightbulb"></i>
-                  </div>
-                  <h4>Problem Solving</h4>
-                  <p>Analytical and creative solutions</p>
-                  <div class="skill-progress">
-                    <div class="progress-bar" data-level="75"></div>
-                  </div>
-                  <span>75%</span>
+              <div class="skill-meter">
+                <div class="skill-progress">
+                  <div class="progress-bar" data-level="80"></div>
                 </div>
+                <span class="skill-percentage">80%</span>
               </div>
-              <div class="skill-item">
-                <div class="skill-info">
-                  <div class="skill-icon">
-                    <i class="fas fa-bullhorn"></i>
-                  </div>
-                  <h4>Public Speaking</h4>
-                  <p>Confident presentations and pitches</p>
-                  <div class="skill-progress">
-                    <div class="progress-bar" data-level="80"></div>
-                  </div>
-                  <span>80%</span>
+            </div>
+          </div>
+          
+       
+          <div class="skill-item" data-skill="visual-design">
+            <div class="skill-info">
+              <div class="skill-icon">
+                <i class="fas fa-paint-brush"></i>
+              </div>
+              <div class="skill-details">
+                <h4>Visual Design</h4>
+                <p>Color theory, typography, and composition</p>
+              </div>
+              <div class="skill-meter">
+                <div class="skill-progress">
+                  <div class="progress-bar" data-level="78"></div>
                 </div>
+                <span class="skill-percentage">78%</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Prototyping -->
+          <div class="skill-item" data-skill="prototyping">
+            <div class="skill-info">
+              <div class="skill-icon">
+                <i class="fas fa-project-diagram"></i>
+              </div>
+              <div class="skill-details">
+                <h4>Prototyping</h4>
+                <p>Interactive prototypes and animations</p>
+              </div>
+              <div class="skill-meter">
+                <div class="skill-progress">
+                  <div class="progress-bar" data-level="75"></div>
+                </div>
+                <span class="skill-percentage">75%</span>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
 
+      <!-- Development Skills -->
+      <div class="skill-category">
+        <div class="category-header">
+          <i class="fas fa-code category-icon"></i>
+          <h3>Development Stack</h3>
+        </div>
+        <div class="skills-grid">
+          <!-- HTML5 -->
+          <div class="skill-item" data-skill="html5">
+            <div class="skill-info">
+              <div class="skill-icon">
+                <i class="fab fa-html5"></i>
+              </div>
+              <div class="skill-details">
+                <h4>HTML5</h4>
+                <p>Semantic markup and accessibility</p>
+              </div>
+              <div class="skill-meter">
+                <div class="skill-progress">
+                  <div class="progress-bar" data-level="90"></div>
+                </div>
+                <span class="skill-percentage">90%</span>
+              </div>
+            </div>
+          </div>
+          
+          
+          <div class="skill-item" data-skill="css3">
+            <div class="skill-info">
+              <div class="skill-icon">
+                <i class="fab fa-css3-alt"></i>
+              </div>
+              <div class="skill-details">
+                <h4>CSS3</h4>
+                <p>Styling, animations, and responsive layouts</p>
+              </div>
+              <div class="skill-meter">
+                <div class="skill-progress">
+                  <div class="progress-bar" data-level="85"></div>
+                </div>
+                <span class="skill-percentage">85%</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- JavaScript -->
+          <div class="skill-item" data-skill="javascript">
+            <div class="skill-info">
+              <div class="skill-icon">
+                <i class="fab fa-js"></i>
+              </div>
+              <div class="skill-details">
+                <h4>JavaScript</h4>
+                <p>Interactive functionality and DOM manipulation</p>
+              </div>
+              <div class="skill-meter">
+                <div class="skill-progress">
+                  <div class="progress-bar" data-level="70"></div>
+                </div>
+                <span class="skill-percentage">70%</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Responsive Development -->
+          <div class="skill-item" data-skill="responsive-dev">
+            <div class="skill-info">
+              <div class="skill-icon">
+                <i class="fas fa-mobile"></i>
+              </div>
+              <div class="skill-details">
+                <h4>Responsive Development</h4>
+                <p>Building for all devices and screen sizes</p>
+              </div>
+              <div class="skill-meter">
+                <div class="skill-progress">
+                  <div class="progress-bar" data-level="80"></div>
+                </div>
+                <span class="skill-percentage">80%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Tools & Technologies -->
+      <div class="skill-category">
+        <div class="category-header">
+          <i class="fas fa-tools category-icon"></i>
+          <h3>Essential Tools</h3>
+        </div>
+        <div class="skills-grid">
+          <!-- Figma -->
+          <div class="skill-item" data-skill="figma">
+            <div class="skill-info">
+              <div class="skill-icon">
+                <i class="fab fa-figma"></i>
+              </div>
+              <div class="skill-details">
+                <h4>Figma</h4>
+                <p>Design and prototyping</p>
+              </div>
+              <div class="skill-meter">
+                <div class="skill-progress">
+                  <div class="progress-bar" data-level="90"></div>
+                </div>
+                <span class="skill-percentage">90%</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Git -->
+          <div class="skill-item" data-skill="git">
+            <div class="skill-info">
+              <div class="skill-icon">
+                <i class="fab fa-git-alt"></i>
+              </div>
+              <div class="skill-details">
+                <h4>Git</h4>
+                <p>Version control and collaboration</p>
+              </div>
+              <div class="skill-meter">
+                <div class="skill-progress">
+                  <div class="progress-bar" data-level="75"></div>
+                </div>
+                <span class="skill-percentage">75%</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Canva -->
+          <div class="skill-item" data-skill="canva">
+            <div class="skill-info">
+              <div class="skill-icon">
+                <img src="image.png" alt="Canva Icon">
+              </div>
+              <div class="skill-details">
+                <h4>Canva</h4>
+                <p>Graphic design and social media content</p>
+              </div>
+              <div class="skill-meter">
+                <div class="skill-progress">
+                  <div class="progress-bar" data-level="75"></div>
+                </div>
+                <span class="skill-percentage">75%</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- VS Code -->
+          <div class="skill-item" data-skill="vscode">
+            <div class="skill-info">
+              <div class="skill-icon">
+                <i class="fas fa-terminal"></i>
+              </div>
+              <div class="skill-details">
+                <h4>VS Code</h4>
+                <p>Code editing and debugging</p>
+              </div>
+              <div class="skill-meter">
+                <div class="skill-progress">
+                  <div class="progress-bar" data-level="85"></div>
+                </div>
+                <span class="skill-percentage">85%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Professional Skills Section -->
+<section id="professional-skills" class="skills professional-skills">
+  <div class="container">
+    <div class="section-header center">
+      <h4 class="section-subtitle">Beyond Code</h4>
+      <h2 class="section-title">Professional <span>Strengths</span></h2>
+      <p class="section-description">Skills that enhance my technical capabilities</p>
+    </div>
+    
+    <div class="skills-container">
+      <!-- Interpersonal Skills -->
+      <div class="skill-category">
+        <div class="category-header">
+          <i class="fas fa-users category-icon"></i>
+          <h3>Team Dynamics</h3>
+        </div>
+        <div class="skills-grid">
+          <!-- Leadership -->
+          <div class="skill-item" data-skill="leadership">
+            <div class="skill-info">
+              <div class="skill-icon">
+                <i class="fas fa-bullhorn"></i>
+              </div>
+              <div class="skill-details">
+                <h4>Leadership</h4>
+                <p>Guiding teams through complex projects</p>
+              </div>
+              <div class="skill-meter">
+                <div class="skill-progress">
+                  <div class="progress-bar" data-level="85"></div>
+                </div>
+                <span class="skill-percentage">85%</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Communication -->
+          <div class="skill-item" data-skill="communication">
+            <div class="skill-info">
+              <div class="skill-icon">
+                <i class="fas fa-comments"></i>
+              </div>
+              <div class="skill-details">
+                <h4>Communication</h4>
+                <p>Articulating ideas clearly to all stakeholders</p>
+              </div>
+              <div class="skill-meter">
+                <div class="skill-progress">
+                  <div class="progress-bar" data-level="90"></div>
+                </div>
+                <span class="skill-percentage">90%</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Team Collaboration -->
+          <div class="skill-item" data-skill="collaboration">
+            <div class="skill-info">
+              <div class="skill-icon">
+                <i class="fas fa-people-arrows"></i>
+              </div>
+              <div class="skill-details">
+                <h4>Team Collaboration</h4>
+                <p>Working effectively in cross-functional teams</p>
+              </div>
+              <div class="skill-meter">
+                <div class="skill-progress">
+                  <div class="progress-bar" data-level="88"></div>
+                </div>
+                <span class="skill-percentage">88%</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Client Relations -->
+          <div class="skill-item" data-skill="client-relations">
+            <div class="skill-info">
+              <div class="skill-icon">
+                <i class="fas fa-handshake"></i>
+              </div>
+              <div class="skill-details">
+                <h4>Client Relations</h4>
+                <p>Managing expectations and building trust</p>
+              </div>
+              <div class="skill-meter">
+                <div class="skill-progress">
+                  <div class="progress-bar" data-level="80"></div>
+                </div>
+                <span class="skill-percentage">80%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Project Skills -->
+      <div class="skill-category">
+        <div class="category-header">
+          <i class="fas fa-tasks category-icon"></i>
+          <h3>Project Execution</h3>
+        </div>
+        <div class="skills-grid">
+          <!-- Project Management -->
+          <div class="skill-item" data-skill="project-management">
+            <div class="skill-info">
+              <div class="skill-icon">
+                <i class="fas fa-project-diagram"></i>
+              </div>
+              <div class="skill-details">
+                <h4>Project Management</h4>
+                <p>Planning and delivering projects on time</p>
+              </div>
+              <div class="skill-meter">
+                <div class="skill-progress">
+                  <div class="progress-bar" data-level="75"></div>
+                </div>
+                <span class="skill-percentage">75%</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Time Management -->
+          <div class="skill-item" data-skill="time-management">
+            <div class="skill-info">
+              <div class="skill-icon">
+                <i class="fas fa-clock"></i>
+              </div>
+              <div class="skill-details">
+                <h4>Time Management</h4>
+                <p>Prioritizing tasks and meeting deadlines</p>
+              </div>
+              <div class="skill-meter">
+                <div class="skill-progress">
+                  <div class="progress-bar" data-level="85"></div>
+                </div>
+                <span class="skill-percentage">85%</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Problem Solving -->
+          <div class="skill-item" data-skill="problem-solving">
+            <div class="skill-info">
+              <div class="skill-icon">
+                <i class="fas fa-lightbulb"></i>
+              </div>
+              <div class="skill-details">
+                <h4>Problem Solving</h4>
+                <p>Analyzing challenges and developing solutions</p>
+              </div>
+              <div class="skill-meter">
+                <div class="skill-progress">
+                  <div class="progress-bar" data-level="90"></div>
+                </div>
+                <span class="skill-percentage">90%</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Strategic Thinking -->
+          <div class="skill-item" data-skill="strategic-thinking">
+            <div class="skill-info">
+              <div class="skill-icon">
+                <i class="fas fa-chart-line"></i>
+              </div>
+              <div class="skill-details">
+                <h4>Strategic Thinking</h4>
+                <p>Aligning projects with business objectives</p>
+              </div>
+              <div class="skill-meter">
+                <div class="skill-progress">
+                  <div class="progress-bar" data-level="78"></div>
+                </div>
+                <span class="skill-percentage">78%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    <!-- Projects Section -->
     <section id="work" class="work">
       <div class="container">
         <div class="section-header center">
           <h4 class="section-subtitle">Browse My Recent</h4>
           <h2 class="section-title">Projects <span>& Work</span></h2>
         </div>
+        
         <div class="projects-container">
-          <div class="project-card">
+          <!-- Food Delivery App -->
+          <div class="project-card" data-category="design">
             <div class="project-image">
-              <img
-                src="Portfolio.png"
-                alt="Personal Portfolio Project"
-                loading="lazy"
-              />
+              <img src="food-delivery.png" alt="Food Delivery App UI" loading="lazy" />
               <div class="project-links">
-                <a href="#" class="btn-icon" aria-label="View Project">
+                <a href="#" class="btn-icon" aria-label="View Prototype">
+                  <i class="fas fa-eye"></i>
+                </a>
+                <a href="#" class="btn-icon" aria-label="View Case Study">
+                  <i class="fas fa-book"></i>
+                </a>
+              </div>
+              <span class="project-badge design-badge">UI/UX Design</span>
+            </div>
+            <div class="project-content">
+              <h3>Food Delivery App</h3>
+              <p>
+                Designed a modern food delivery interface with intuitive ordering flow,
+                restaurant browsing, and real-time tracking features.
+              </p>
+              <div class="project-tags">
+                <span>Figma</span>
+                <span>Mobile UI</span>
+                <span>User Flows</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Music App -->
+          <div class="project-card" data-category="design">
+            <div class="project-image">
+              <img src="music.png" alt="Music App UI" loading="lazy" />
+              <div class="project-links">
+                <a href="#" class="btn-icon" aria-label="View Prototype">
+                  <i class="fas fa-eye"></i>
+                </a>
+                <a href="#" class="btn-icon" aria-label="View Case Study">
+                  <i class="fas fa-book"></i>
+                </a>
+              </div>
+              <span class="project-badge design-badge">UI/UX Design</span>
+            </div>
+            <div class="project-content">
+              <h3>Music Streaming App</h3>
+              <p>
+                Created a sleek music player interface with personalized recommendations,
+                playlist management.
+              </p>
+              <div class="project-tags">
+                <span>Figma</span>
+                <span>iOS/Android</span>
+                <span>Dark Mode</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Personal Portfolio -->
+          <div class="project-card" data-category="development">
+            <div class="project-image">
+              <img src="portfolio-site.jpg" alt="Personal Portfolio Website" loading="lazy" />
+              <div class="project-links">
+                <a href="#" class="btn-icon" aria-label="View Live">
                   <i class="fas fa-eye"></i>
                 </a>
                 <a href="#" class="btn-icon" aria-label="View Code">
                   <i class="fas fa-code"></i>
                 </a>
               </div>
+              <span class="project-badge dev-badge">Development</span>
             </div>
             <div class="project-content">
               <h3>Personal Portfolio</h3>
               <p>
-                My first web development project - this portfolio website
-                showcasing my skills and experience.
+                Developed a responsive portfolio website with smooth animations,
+                dark/light mode, and interactive elements.
               </p>
               <div class="project-tags">
-                <span>HTML</span>
-                <span>CSS</span>
+                <span>UI/UX</span>
+                <span>HTML/CSS</span>
                 <span>JavaScript</span>
+                <span>Responsive</span>
               </div>
             </div>
           </div>
 
-          <div class="project-card">
+          <!-- Gaming Console UI -->
+          <div class="project-card" data-category="design">
             <div class="project-image">
-              <img src="Naksawala.png" alt="College Project" loading="lazy" />
+              <img src="gaming.png" alt="Gaming Console UI" loading="lazy" />
               <div class="project-links">
-                <a
-                  href="https://nischal-007np.github.io/Engineering-Ui/"
-                  class="btn-icon"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="View Project"
-                >
+                <a href="#" class="btn-icon" aria-label="View Prototype">
                   <i class="fas fa-eye"></i>
                 </a>
-                <a href="#" class="btn-icon" aria-label="View Code">
-                  <i class="fas fa-code"></i>
+                <a href="#" class="btn-icon" aria-label="View Case Study">
+                  <i class="fas fa-book"></i>
                 </a>
               </div>
+              <span class="project-badge design-badge">UI/UX Design</span>
             </div>
             <div class="project-content">
-              <h3>College Project</h3>
+              <h3>Gaming Console UI</h3>
               <p>
-                A collaborative project developed as part of my CSIT coursework
-                at BMC.
+                Designed a controller-friendly interface for gaming consoles with game library,
+                social features, and store integration.
               </p>
               <div class="project-tags">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
+                <span>Figma</span>
+                <span>UI</span>
+                <span>Game Design</span>
               </div>
             </div>
           </div>
-
-          <div class="project-card">
+          <div class="project-card" data-category="design">
             <div class="project-image">
-              <img src="nirse.png" alt="Learning Project" loading="lazy" />
+              <img src="digital-agency.png" alt="digital-agency" loading="lazy" />
               <div class="project-links">
-                <a
-                  href="https://nischal-007np.github.io/Hotel-UI/"
-                  class="btn-icon"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="View Project"
-                >
+                <a href="#" class="btn-icon" aria-label="View Prototype">
                   <i class="fas fa-eye"></i>
                 </a>
-                <a href="#" class="btn-icon" aria-label="View Code">
-                  <i class="fas fa-code"></i>
+                <a href="#" class="btn-icon" aria-label="View Case Study">
+                  <i class="fas fa-book"></i>
                 </a>
               </div>
+              <span class="project-badge design-badge">UI/UX Design</span>
             </div>
             <div class="project-content">
-              <h3>Learning Project</h3>
+              <h3>Digital Agency UI</h3>
               <p>
-                A small project I built while learning web development
-                fundamentals.
+                Designed a user-friendly interface for digital agency with services,
+                projects, and everything.
               </p>
               <div class="project-tags">
-                <span>HTML</span>
-                <span>CSS</span>
+                <span>Figma</span>
+                <span>UI</span>
+                <span>Web Design</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-card" data-category="design">
+            <div class="project-image">
+              <img src="mouse.png" alt="mouse" loading="lazy" />
+              <div class="project-links">
+                <a href="#" class="btn-icon" aria-label="View Prototype">
+                  <i class="fas fa-eye"></i>
+                </a>
+                <a href="#" class="btn-icon" aria-label="View Case Study">
+                  <i class="fas fa-book"></i>
+                </a>
+              </div>
+              <span class="project-badge design-badge">UI/UX Design</span>
+            </div>
+            <div class="project-content">
+              <h3>Mouse Ui</h3>
+              <p>
+                Designed a user-friendly interface for a Mouse wbesite with prices,
+                CTA, and everything.
+              </p>
+              <div class="project-tags">
+                <span>Figma</span>
+                <span>UI</span>
+                <span>Web Design</span>
               </div>
             </div>
           </div>
         </div>
 
+        <!-- Experience Section -->
         <div class="experience-section">
           <div class="section-header center">
             <h4 class="section-subtitle">Explore My</h4>
@@ -438,42 +819,51 @@
                 <h5>Butwal Multiple Campus (BMC)</h5>
                 <p>
                   Currently pursuing my bachelor's degree in Computer Science
-                  and Information Technology.
+                  and Information Technology with focus on HCI and frontend development.
                 </p>
               </div>
             </div>
-
             <div class="timeline-item">
               <div class="timeline-date">2025</div>
               <div class="timeline-content">
-                <h4>Web Development Training</h4>
+                <h4>UI/UX Design With Figma</h4>
+                <h5>Udemy</h5>
+                <p>
+                  Completed a comprehensive course on UI/UX design principles using Figma,
+                  covering user research, wireframing, prototyping, and usability testing.
+                </p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-date">2025</div>
+              <div class="timeline-content">
+                <h4>Frontend Training</h4>
                 <h5>CSIT Association of BMC</h5>
                 <p>
-                  Taken training in basic web development from the mentors of
-                  the CSIT Association of BMC.
+                  Completed training in UI/UX design principles and frontend development,
+                  including HTML, CSS, JavaScript, and design tools.
                 </p>
               </div>
             </div>
-
             <div class="timeline-item">
               <div class="timeline-date">2025</div>
               <div class="timeline-content">
-                <h4>Amazon Web Services Workshop</h4>
-                <h5>CSIT Association of BMC</h5>
+                <h4>Freelance Designer & Developer</h4>
+                <h5>Self-Employed</h5>
                 <p>
-                  Taken 2 days workshop on AWS by 24years+ experienced mentors.
+                  Designed and developed interfaces for local businesses, creating
+                  websites, mobile app prototypes, and interactive UIs.
                 </p>
               </div>
             </div>
-
             <div class="timeline-item">
-              <div class="timeline-date">2025</div>
+              <div class="timeline-date">2024</div>
               <div class="timeline-content">
-                <h4>HTML,CSS and Tailwind CSS</h4>
-                <h5>Butwal Multiple Campus (BMC)</h5>
+                <h4>Web Development</h4>
+                <h5>Synthbit Technologies</h5>
                 <p>
-                  Taken 1month training given by Butwal Multiple Campus in
-                  collaboration with Synthbit Technologies.
+                  Participated in intensive workshop covering HTML, CSS, JavaScript,
+                  and responsive design principles.
                 </p>
               </div>
             </div>
@@ -482,6 +872,7 @@
       </div>
     </section>
 
+    <!-- Contact Section -->
     <section id="contact" class="contact">
       <div class="container">
         <div class="section-header center">
@@ -497,11 +888,9 @@
               <div class="contact-details">
                 <h4>Email</h4>
                 <p>nischalpanthi0007@gmail.com</p>
-                <a
-                  href="mailto:nischalpanthi0007@gmail.com"
-                  class="contact-link"
-                  >Send Message <i class="fas fa-arrow-right"></i
-                ></a>
+                <a href="mailto:nischalpanthi0007@gmail.com" class="contact-link">
+                  Send Message <i class="fas fa-arrow-right"></i>
+                </a>
               </div>
             </div>
 
@@ -512,9 +901,9 @@
               <div class="contact-details">
                 <h4>Phone</h4>
                 <p>+977 9762246074</p>
-                <a href="tel:+9779762246074" class="contact-link"
-                  >Call Me <i class="fas fa-arrow-right"></i
-                ></a>
+                <a href="tel:+9779762246074" class="contact-link">
+                  Call Me <i class="fas fa-arrow-right"></i>
+                </a>
               </div>
             </div>
 
@@ -525,13 +914,9 @@
               <div class="contact-details">
                 <h4>Location</h4>
                 <p>Butwal, Nepal</p>
-                <a
-                  href="https://maps.app.goo.gl/4N5MzHDLBbUPpKC76"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="contact-link"
-                  >View Map <i class="fas fa-arrow-right"></i
-                ></a>
+                <a href="https://maps.app.goo.gl/4N5MzHDLBbUPpKC76" target="_blank" rel="noopener noreferrer" class="contact-link">
+                  View Map <i class="fas fa-arrow-right"></i>
+                </a>
               </div>
             </div>
           </div>
@@ -540,45 +925,22 @@
             <form id="contactForm">
               <div class="form-group">
                 <label for="name">Your Name</label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  placeholder="John Doe"
-                  required
-                />
+                <input type="text" id="name" name="name" placeholder="John Doe" required />
               </div>
 
               <div class="form-group">
                 <label for="email">Your Email</label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="me@example.com"
-                  required
-                />
+                <input type="email" id="email" name="email" placeholder="me@example.com" required />
               </div>
 
               <div class="form-group">
                 <label for="subject">Subject</label>
-                <input
-                  type="text"
-                  id="subject"
-                  name="subject"
-                  placeholder="I'd like to talk about..."
-                />
+                <input type="text" id="subject" name="subject" placeholder="I'd like to talk about..." />
               </div>
 
               <div class="form-group">
                 <label for="message">Your Message</label>
-                <textarea
-                  id="message"
-                  name="message"
-                  placeholder="Hello, I'd like to talk about..."
-                  rows="5"
-                  required
-                ></textarea>
+                <textarea id="message" name="message" placeholder="Hello, I'd like to talk about..." rows="5" required></textarea>
               </div>
 
               <button type="submit" class="btn primary-btn">
@@ -591,46 +953,27 @@
       </div>
     </section>
 
+    <!-- Footer -->
     <footer>
       <div class="container">
         <div class="footer-content">
           <div class="footer-col">
             <a href="#" class="logo">Nischal<span>.</span></a>
             <p>
-              A passionate web developer creating beautiful, functional digital
+              A UI/UX Designer & Frontend Developer creating beautiful, functional digital
               experiences and currently studying BSc. CSIT at Butwal Multiple Campus.
             </p>
             <div class="social-links">
-              <a
-                href="https://github.com/Nischal-007np"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="GitHub"
-              >
+              <a href="https://github.com/Nischal-007np" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                 <i class="fab fa-github"></i>
               </a>
-              <a
-                href="www.linkedin.com/in/nischal-panthi"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="LinkedIn"
-              >
+              <a href="https://www.linkedin.com/in/nischal-panthi" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                 <i class="fab fa-linkedin-in"></i>
               </a>
-              <a
-                href="https://www.instagram.com/cris_nischal07/"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Instagram"
-              >
+              <a href="https://www.instagram.com/cris_nischal07/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                 <i class="fab fa-instagram"></i>
               </a>
-              <a
-                href="https://www.facebook.com/profile.php?id=100082418006579"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Facebook"
-              >
+              <a href="https://www.facebook.com/profile.php?id=100082418006579" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                 <i class="fab fa-facebook"></i>
               </a>
             </div>
@@ -641,7 +984,7 @@
             <ul>
               <li><a href="#about">About</a></li>
               <li><a href="#skills">Skills</a></li>
-              <li><a href="#work">Work</a></li>
+              <li><a href="#work">Projects</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
           </div>
@@ -661,7 +1004,7 @@
             &copy; <span id="current-year"></span> Nischal Panthi. All rights
             reserved.
           </p>
-          <p>BSc. CSIT Student</p>
+          <p>UI/UX Designer & Frontend Developer</p>
         </div>
       </div>
     </footer>

@@ -60,7 +60,8 @@ document.addEventListener('DOMContentLoaded', function() {
    
     const typewriter = document.querySelector('.typewriter .typed-text');
     const cursor = document.querySelector('.typewriter .cursor');
-    const words = ['Web Developer', 'UI/UX Enthusiast', 'CSIT Student'];
+    const words = ['UI/UX Designer', 'Web Developer', 'CSIT Student'];
+
     let wordIndex = 0;
     let charIndex = 0;
     let isDeleting = false;
