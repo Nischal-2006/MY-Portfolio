@@ -57,19 +57,32 @@
 
 
 .dark-mode {
-    --dark-color: #f8f9fa;
-    --dark-light: #e9ecef;
-    --light-color: #1a1a2e;
-    --light-dark: #2a2a3a;
-    --text-color: #f8f9fa;
-    --text-light: #adb5bd;
-    --text-dark: #f8f9fa;
-    --glass-bg: rgba(26, 26, 46, 0.5);
+    --primary-color: #7d77ff;  /* Slightly brighter purple */
+    --primary-light: #9a95ff;
+    --primary-dark: #5d58cc;
+    --secondary-color: #ff7d97;  /* Softer pink */
+    --accent-color: #4df1c5;     /* Brighter teal for better visibility */
+    
+    /* Dark theme colors */
+    --dark-color: #0f0f1a;       /* Deep navy instead of pure black */
+    --dark-light: #1e1e2e;       /* Slightly lighter navy */
+    --light-color: #121212;      /* Dark gray instead of pure black */
+    --light-dark: #2a2a3a;       /* Kept from original */
+    
+    /* Text colors */
+    --text-color: #e0e0e0;       /* Soft white */
+    --text-light: #a0a0a0;       /* Medium gray for secondary text */
+    --text-dark: #ffffff;        /* Pure white for headings */
+    
+    /* Glass effects */
+    --glass-bg: rgba(30, 30, 46, 0.7);  /* More opaque for better readability */
     --glass-border: rgba(255, 255, 255, 0.1);
-    --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+    --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);  /* Darker shadow */
+    
+    /* Special adjustments */
+    --gradient-primary: linear-gradient(135deg, #7d77ff 0%, #9a95ff 100%);
+    --gradient-accent: linear-gradient(135deg, #ff7d97 0%, #ff9e7d 100%);
 }
-
-
 * {
     margin: 0;
     padding: 0;
@@ -1401,22 +1414,6 @@ footer {
   }
   
   /* Gradient scroll effect */
-  body {
-    background: linear-gradient(
-      to bottom,
-      var(--light-color) 0%,
-      rgba(255,255,255,0) 50%,
-      var(--light-color) 100%
-    );
-    background-size: 100% 200%;
-    background-attachment: fixed;
-  }
   
-  .dark-mode body {
-    background: linear-gradient(
-      to bottom,
-      var(--dark-color) 0%,
-      rgba(26,26,46,0) 50%,
-      var(--dark-color) 100%
-    );
-  }
+  
+  
