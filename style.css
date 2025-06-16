@@ -1360,3 +1360,63 @@ footer {
         font-size: 1.2rem;
     }
 }
+/* Add this at the bottom of your CSS file */
+
+/* Custom scroll animations */
+[data-aos="custom-fade-in"] {
+    opacity: 0;
+    transform: translateY(30px);
+    transition-property: transform, opacity;
+  }
+  
+  [data-aos="custom-fade-in"].aos-animate {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  [data-aos="custom-scale"] {
+    transform: scale(0.8);
+    opacity: 0;
+    transition-property: transform, opacity;
+  }
+  
+  [data-aos="custom-scale"].aos-animate {
+    transform: scale(1);
+    opacity: 1;
+  }
+  
+  /* Floating animation */
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+  
+  /* Add this to elements you want to float */
+  .tech-icon, .project-card, .contact-card {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  /* Gradient scroll effect */
+  body {
+    background: linear-gradient(
+      to bottom,
+      var(--light-color) 0%,
+      rgba(255,255,255,0) 50%,
+      var(--light-color) 100%
+    );
+    background-size: 100% 200%;
+    background-attachment: fixed;
+  }
+  
+  .dark-mode body {
+    background: linear-gradient(
+      to bottom,
+      var(--dark-color) 0%,
+      rgba(26,26,46,0) 50%,
+      var(--dark-color) 100%
+    );
+  }

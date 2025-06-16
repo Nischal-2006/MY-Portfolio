@@ -14,6 +14,7 @@
       content="UI/UX Designer & Frontend Developer"
     />
     <title>Nischal Panthi | UI/UX Designer & Developer</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700&display=swap"
@@ -60,10 +61,10 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero" >
       <div class="container">
         <div class="hero-content">
-          <div class="hero-text">
+          <div class="hero-text"data-aos="fade-right" data-aos-delay="100">
             <h4 class="greeting">Hello, I'm</h4>
             <h1 class="name">Nischal <span>Panthi</span></h1>
             <div class="typewriter">
@@ -99,7 +100,7 @@
               </a>
             </div>
           </div>
-          <div class="hero-image">
+          <div class="hero-image" data-aos="fade-left" data-aos-delay="200">
             <div class="profile-container">
               <div class="profile-overlay"></div>
               <img src="Developer.png" alt="Nischal Panthi" class="profile-img" loading="eager" />
@@ -132,17 +133,17 @@
     <!-- About Section -->
     <section id="about" class="about">
       <div class="container">
-        <div class="section-header">
+        <div class="section-header"data-aos="fade-up">
           <h4 class="section-subtitle">Get To Know More</h4>
           <h2 class="section-title">About <span>Me</span></h2>
         </div>
         <div class="about-content">
-          <div class="about-image">
+          <div class="about-image"data-aos="fade-right">
             <div class="image-frame">
               <img src="profile.jpg" alt="Nischal Panthi" loading="lazy" />
             </div>
           </div>
-          <div class="about-text">
+          <div class="about-text"  data-aos="fade-left" data-aos-delay="200">
             <div class="about-cards">
               <div class="exp-card">
                 <i class="fas fa-award"></i>
@@ -183,7 +184,7 @@
     <!-- Technical Skills Section -->
 <section id="technical-skills" class="skills">
   <div class="container">
-    <div class="section-header center">
+    <div class="section-header center"data-aos="fade-up">
       <h4 class="section-subtitle">My Core</h4>
       <h2 class="section-title">Technical <span>Expertise</span></h2>
       <p class="section-description">Tools and technologies I use to bring ideas to life</p>
@@ -191,7 +192,7 @@
     
     <div class="skills-container">
       <!-- Design Skills -->
-      <div class="skill-category">
+      <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
         <div class="category-header">
           <i class="fas fa-pencil-ruler category-icon"></i>
           <h3>Design Specialization</h3>
@@ -276,7 +277,7 @@
       </div>
 
       <!-- Development Skills -->
-      <div class="skill-category">
+      <div class="skill-category"data-aos="fade-up" data-aos-delay="200">
         <div class="category-header">
           <i class="fas fa-code category-icon"></i>
           <h3>Development Stack</h3>
@@ -361,7 +362,7 @@
       </div>
       
       <!-- Tools & Technologies -->
-      <div class="skill-category">
+      <div class="skill-category"data-aos="fade-up" data-aos-delay="300">
         <div class="category-header">
           <i class="fas fa-tools category-icon"></i>
           <h3>Essential Tools</h3>
@@ -457,9 +458,9 @@
       <p class="section-description">Skills that enhance my technical capabilities</p>
     </div>
     
-    <div class="skills-container">
+    <div class="skills-container" >
       <!-- Interpersonal Skills -->
-      <div class="skill-category">
+      <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
         <div class="category-header">
           <i class="fas fa-users category-icon"></i>
           <h3>Team Dynamics</h3>
@@ -544,7 +545,7 @@
       </div>
       
       <!-- Project Skills -->
-      <div class="skill-category">
+      <div class="skill-category"data-aos="fade-up" data-aos-delay="400">
         <div class="category-header">
           <i class="fas fa-tasks category-icon"></i>
           <h3>Project Execution</h3>
@@ -633,14 +634,14 @@
     <!-- Projects Section -->
     <section id="work" class="work">
       <div class="container">
-        <div class="section-header center">
+        <div class="section-header center" data-aos="flip-up" >
           <h4 class="section-subtitle">Browse My Recent</h4>
           <h2 class="section-title">Projects <span>& Work</span></h2>
         </div>
         
         <div class="projects-container">
           <!-- Food Delivery App -->
-          <div class="project-card" data-category="design">
+          <div class="project-card" data-category="design" data-aos="flip-up" data-aos-delay="100">
             <div class="project-image">
               <img src="food-delivery.png" alt="Food Delivery App UI" loading="lazy" />
               <div class="project-links">
@@ -668,7 +669,7 @@
           </div>
 
           <!-- Music App -->
-          <div class="project-card" data-category="design">
+          <div class="project-card" data-category="design" data-aos="flip-up" data-aos-delay="200">
             <div class="project-image">
               <img src="music.png" alt="Music App UI" loading="lazy" />
               <div class="project-links">
@@ -696,15 +697,12 @@
           </div>
 
           <!-- Personal Portfolio -->
-          <div class="project-card" data-category="development">
+          <div class="project-card" data-category="development" data-aos="flip-up" data-aos-delay="300">
             <div class="project-image">
-              <img src="portfolio-site.jpg" alt="Personal Portfolio Website" loading="lazy" />
+              <img src="Portfolio.png" alt="Personal Portfolio Website" loading="lazy" />
               <div class="project-links">
                 <a href="#" class="btn-icon" aria-label="View Live">
                   <i class="fas fa-eye"></i>
-                </a>
-                <a href="#" class="btn-icon" aria-label="View Code">
-                  <i class="fas fa-code"></i>
                 </a>
               </div>
               <span class="project-badge dev-badge">Development</span>
@@ -725,7 +723,7 @@
           </div>
 
           <!-- Gaming Console UI -->
-          <div class="project-card" data-category="design">
+          <div class="project-card" data-category="design" data-aos="flip-up" data-aos-delay="400">
             <div class="project-image">
               <img src="gaming.png" alt="Gaming Console UI" loading="lazy" />
               <div class="project-links">
@@ -751,7 +749,7 @@
               </div>
             </div>
           </div>
-          <div class="project-card" data-category="design">
+          <div class="project-card" data-category="design" data-aos="flip-up" data-aos-delay="500">
             <div class="project-image">
               <img src="digital-agency.png" alt="digital-agency" loading="lazy" />
               <div class="project-links">
@@ -777,7 +775,7 @@
               </div>
             </div>
           </div>
-          <div class="project-card" data-category="design">
+          <div class="project-card" data-category="design" data-aos="flip-up" data-aos-delay="600">
             <div class="project-image">
               <img src="mouse.png" alt="mouse" loading="lazy" />
               <div class="project-links">
@@ -831,6 +829,17 @@
                 <p>
                   Completed a comprehensive course on UI/UX design principles using Figma,
                   covering user research, wireframing, prototyping, and usability testing.
+                </p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-date">2025</div>
+              <div class="timeline-content">
+                <h4>UI/UX Design WorkShop</h4>
+                <h5>Code for Change</h5>
+                <p>
+                  Participated in a hands-on workshop focused on UI/UX design best practices,
+                  including user-centered design, accessibility, and responsive design.
                 </p>
               </div>
             </div>
@@ -1008,7 +1017,15 @@
         </div>
       </div>
     </footer>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+        easing: 'ease-in-out',
+        once: false,
+        mirror: true
+      });
+    </script>
     <script src="script.js"></script>
   </body>
 </html>

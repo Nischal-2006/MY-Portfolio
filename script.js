@@ -164,3 +164,35 @@ document.addEventListener('DOMContentLoaded', function() {
     
     document.body.classList.add('loaded');
 });
+
+// Custom scroll animations for elements
+function animateOnScroll() {
+    const elements = document.querySelectorAll('.section-animate');
+    
+    elements.forEach(element => {
+      const elementPosition = element.getBoundingClientRect().top;
+      const screenPosition = window.innerHeight / 1.2;
+      
+      if(elementPosition < screenPosition) {
+        element.classList.add('animate');
+      }
+    });
+  }
+  
+  window.addEventListener('scroll', animateOnScroll);
+  window.addEventListener('load', animateOnScroll);
+  
+  // Parallax effect for hero section
+  window.addEventListener('scroll', function() {
+    const scrollPosition = window.pageYOffset;
+    const hero = document.querySelector('.hero');
+    const heroContent = document.querySelector('.hero-content');
+    
+    if(hero) {
+      hero.style.backgroundPositionY = scrollPosition * 0.5 + 'px';
+    }
+    
+    if(heroContent) {
+      heroContent.style.transform = `translateY(${scrollPosition * 0.3}px)`;
+    }
+  });
