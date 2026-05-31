@@ -192,7 +192,7 @@ function Identity() {
 /* ---------------- MISSIONS + BOSSES ---------------- */
 function MissionsAndBosses() {
   return (
-    <div className="grid lg:grid-cols-2 gap-6">
+    <div id="missions" className="grid lg:grid-cols-2 gap-6 scroll-mt-24">
       <Panel title="Active Life Missions" tag="side_quests" accent="purple">
         <div className="space-y-5">
           <StatBar label="🧠 Project Thinking" value={65} color="purple" hint="Trying to organize chaos that keeps updating itself" />
