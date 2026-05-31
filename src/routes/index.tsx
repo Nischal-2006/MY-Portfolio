@@ -4,6 +4,7 @@ import { useState } from "react";
 import { BootScreen } from "@/components/BootScreen";
 import { StatusBar } from "@/components/StatusBar";
 import { Panel, StatBar, GlitchText } from "@/components/ui-bits";
+import { GuffadiTerminal, NeuralSkillMap } from "@/components/GuffadiTerminal";
 import avatar from "@/assets/avatar.jpg";
 
 export const Route = createFileRoute("/")({
