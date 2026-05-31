@@ -139,13 +139,18 @@ function Hero() {
   );
 }
 
-function HeroBtn({ color, label }: { color: "purple" | "cyan" | "warn"; label: string }) {
+function HeroBtn({ color, label, target }: { color: "purple" | "cyan" | "warn"; label: string; target?: string }) {
   const c = color === "warn" ? "var(--warning)" : `var(--neon-${color})`;
+  const onClick = () => {
+    if (!target) return;
+    document.getElementById(target)?.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
   return (
     <motion.button
+      onClick={onClick}
       whileHover={{ scale: 1.04 }}
       whileTap={{ scale: 0.97 }}
-      className="glitch-hover px-4 py-2.5 rounded-md font-semibold tracking-wide"
+      className="glitch-hover px-4 py-2.5 rounded-md font-semibold tracking-wide cursor-pointer"
       style={{
         background: `color-mix(in oklab, ${c} 14%, transparent)`,
         border: `1px solid ${c}`,
