@@ -89,14 +89,14 @@ function Hero() {
             transition={{ delay: 0.5 }}
             className="mt-3 text-base text-muted-foreground/80 max-w-xl"
           >
-            I don’t follow one path. I explore, explain, start, pause,
-            and somehow still move forward.
+            This site is a playable dashboard of me — explore my missions,
+            archived projects, skill map, and even talk to the system directly.
           </motion.p>
 
           <div className="mt-8 flex flex-wrap gap-3 font-mono text-sm">
-            <HeroBtn color="purple" label="▶ Enter System (Risky)" />
-            <HeroBtn color="cyan" label="📂 View Chaos Logs" />
-            <HeroBtn color="warn" label="⚠ Continue Without Understanding" />
+            <HeroBtn color="purple" label="▶ Enter System" target="missions" />
+            <HeroBtn color="cyan" label="💬 Talk to Me" target="terminal" />
+            <HeroBtn color="warn" label="📡 Connect" target="contact" />
           </div>
 
           <div className="mt-10 grid grid-cols-2 sm:grid-cols-4 gap-3 font-mono text-[11px]">
