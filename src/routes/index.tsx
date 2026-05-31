@@ -4,6 +4,7 @@ import { useState } from "react";
 import { BootScreen } from "@/components/BootScreen";
 import { StatusBar } from "@/components/StatusBar";
 import { Panel, StatBar, GlitchText } from "@/components/ui-bits";
+import { GuffadiTerminal, NeuralSkillMap } from "@/components/GuffadiTerminal";
 import avatar from "@/assets/avatar.jpg";
 
 export const Route = createFileRoute("/")({
@@ -34,6 +35,8 @@ function Index() {
         <div className="max-w-6xl mx-auto px-4 md:px-6 space-y-10 mt-16">
           <Identity />
           <MissionsAndBosses />
+          <GuffadiTerminal />
+          <NeuralSkillMap />
           <MemoryArchives />
           <Experiments />
           <Projects />
