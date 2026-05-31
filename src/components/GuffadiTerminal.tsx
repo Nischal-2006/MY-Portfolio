@@ -62,7 +62,7 @@ export function GuffadiTerminal() {
   }
 
   return (
-    <Panel title="Guffadi Terminal — Talk to the System" tag="chat.live" accent="cyan">
+    <Panel id="terminal" title="Guffadi Terminal — Talk to the System" tag="chat.live" accent="cyan">
       <div className="grid lg:grid-cols-[1fr_220px] gap-5">
         <div className="rounded-lg border border-neon-cyan/30 bg-background/60 overflow-hidden">
           <div className="flex items-center gap-2 px-3 py-2 border-b border-border/60 bg-card/80 font-mono text-[11px]">

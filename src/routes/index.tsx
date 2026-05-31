@@ -89,14 +89,14 @@ function Hero() {
             transition={{ delay: 0.5 }}
             className="mt-3 text-base text-muted-foreground/80 max-w-xl"
           >
-            I don’t follow one path. I explore, explain, start, pause,
-            and somehow still move forward.
+            This site is a playable dashboard of me — explore my missions,
+            archived projects, skill map, and even talk to the system directly.
           </motion.p>
 
           <div className="mt-8 flex flex-wrap gap-3 font-mono text-sm">
-            <HeroBtn color="purple" label="▶ Enter System (Risky)" />
-            <HeroBtn color="cyan" label="📂 View Chaos Logs" />
-            <HeroBtn color="warn" label="⚠ Continue Without Understanding" />
+            <HeroBtn color="purple" label="▶ Enter System" target="missions" />
+            <HeroBtn color="cyan" label="💬 Talk to Me" target="terminal" />
+            <HeroBtn color="warn" label="📡 Connect" target="contact" />
           </div>
 
           <div className="mt-10 grid grid-cols-2 sm:grid-cols-4 gap-3 font-mono text-[11px]">
@@ -139,13 +139,18 @@ function Hero() {
   );
 }
 
-function HeroBtn({ color, label }: { color: "purple" | "cyan" | "warn"; label: string }) {
+function HeroBtn({ color, label, target }: { color: "purple" | "cyan" | "warn"; label: string; target?: string }) {
   const c = color === "warn" ? "var(--warning)" : `var(--neon-${color})`;
+  const onClick = () => {
+    if (!target) return;
+    document.getElementById(target)?.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
   return (
     <motion.button
+      onClick={onClick}
       whileHover={{ scale: 1.04 }}
       whileTap={{ scale: 0.97 }}
-      className="glitch-hover px-4 py-2.5 rounded-md font-semibold tracking-wide"
+      className="glitch-hover px-4 py-2.5 rounded-md font-semibold tracking-wide cursor-pointer"
       style={{
         background: `color-mix(in oklab, ${c} 14%, transparent)`,
         border: `1px solid ${c}`,
@@ -187,7 +192,7 @@ function Identity() {
 /* ---------------- MISSIONS + BOSSES ---------------- */
 function MissionsAndBosses() {
   return (
-    <div className="grid lg:grid-cols-2 gap-6">
+    <div id="missions" className="grid lg:grid-cols-2 gap-6 scroll-mt-24">
       <Panel title="Active Life Missions" tag="side_quests" accent="purple">
         <div className="space-y-5">
           <StatBar label="🧠 Project Thinking" value={65} color="purple" hint="Trying to organize chaos that keeps updating itself" />

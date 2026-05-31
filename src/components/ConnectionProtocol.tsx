@@ -25,7 +25,7 @@ export function ConnectionProtocol() {
   const c = (col: string) => (col === "warn" ? "var(--warning)" : `var(--neon-${col})`);
 
   return (
-    <Panel title="Connection Protocol — Establish Link" tag="contact.handshake" accent="green">
+    <Panel id="contact" title="Connection Protocol — Establish Link" tag="contact.handshake" accent="green">
       <div className="mb-6 rounded-lg border border-warning/40 bg-warning/5 p-4 font-mono text-sm flex gap-3">
         <span className="text-warning text-xl leading-none">⚠</span>
         <div>
