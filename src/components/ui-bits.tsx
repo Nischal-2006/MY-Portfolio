@@ -79,11 +79,13 @@ export function Panel({
   tag,
   children,
   accent = "purple",
+  id,
 }: {
   title: string;
   tag?: string;
   children: React.ReactNode;
   accent?: "purple" | "cyan" | "green" | "pink";
+  id?: string;
 }) {
   const colorVar = {
     purple: "var(--neon-purple)",
@@ -94,11 +96,12 @@ export function Panel({
   const hexId = hashHex(tag ?? title);
   return (
     <motion.section
+      id={id}
       initial={{ opacity: 0, y: 24 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-80px" }}
       transition={{ duration: 0.6 }}
-      className="glass rounded-xl p-6 md:p-8 relative overflow-hidden"
+      className="glass rounded-xl p-6 md:p-8 relative overflow-hidden scroll-mt-24"
       style={{ borderColor: `color-mix(in oklab, ${colorVar} 35%, transparent)` }}
     >
       <div
