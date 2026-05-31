@@ -65,6 +65,15 @@ export function GlitchText({ children, className = "" }: { children: string; cla
   );
 }
 
+function hashHex(input: string): string {
+  let h = 0;
+  for (let i = 0; i < input.length; i++) {
+    h = ((h << 5) - h + input.charCodeAt(i)) | 0;
+  }
+  const hex = Math.abs(h).toString(16).padStart(6, "0").slice(0, 6);
+  return hex;
+}
+
 export function Panel({
   title,
   tag,
@@ -82,6 +91,7 @@ export function Panel({
     green: "var(--neon-green)",
     pink: "var(--neon-pink)",
   }[accent];
+  const hexId = hashHex(tag ?? title);
   return (
     <motion.section
       initial={{ opacity: 0, y: 24 }}
@@ -100,7 +110,7 @@ export function Panel({
           <span className="inline-block h-2 w-2 rounded-full" style={{ background: colorVar, boxShadow: `0 0 8px ${colorVar}` }} />
           <span className="uppercase tracking-[0.2em] text-muted-foreground">{tag ?? "module"}</span>
         </div>
-        <span className="text-muted-foreground/60">// {Math.random().toString(16).slice(2, 8)}</span>
+        <span className="text-muted-foreground/60">// {hexId}</span>
       </header>
       <h2 className="text-2xl md:text-3xl font-bold mb-6" style={{ color: colorVar }}>
         {title}
