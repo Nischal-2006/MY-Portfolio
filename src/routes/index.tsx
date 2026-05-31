@@ -44,6 +44,7 @@ function Index() {
           <Guilds />
           <StatsPanel />
           <PhotoWall />
+          <ConnectionProtocol />
           <FinalQuote />
         </div>
         <Footer />
