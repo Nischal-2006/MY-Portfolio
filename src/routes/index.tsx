@@ -35,6 +35,8 @@ function Index() {
         <div className="max-w-6xl mx-auto px-4 md:px-6 space-y-10 mt-16">
           <Identity />
           <MissionsAndBosses />
+          <GuffadiTerminal />
+          <NeuralSkillMap />
           <MemoryArchives />
           <Experiments />
           <Projects />
