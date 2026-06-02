@@ -3,12 +3,10 @@ import { motion } from "framer-motion";
 import { Panel } from "./ui-bits";
 
 const CHANNELS = [
-  { id: "email", icon: "✉", label: "Email", handle: "nischal.panthi@guffadi.os", href: "mailto:hello@example.com", color: "cyan", note: "fastest — I read these between overthinking sessions." },
-  { id: "github", icon: "⌨", label: "GitHub", handle: "@nischal-panthi", href: "https://github.com", color: "purple", note: "where half-built ideas go to rest peacefully." },
-  { id: "linkedin", icon: "🔗", label: "LinkedIn", handle: "in/nischal-panthi", href: "https://linkedin.com", color: "cyan", note: "formal version of me. wears a collar." },
-  { id: "x", icon: "𝕏", label: "X / Twitter", handle: "@nischal_os", href: "https://x.com", color: "pink", note: "shitposts, ideas, occasional wisdom." },
-  { id: "ig", icon: "◉", label: "Instagram", handle: "@nischal.exe", href: "https://instagram.com", color: "pink", note: "proof of life. mostly." },
-  { id: "discord", icon: "✺", label: "Discord", handle: "nischal#0001", href: "#", color: "green", note: "best place for a 3am idea dump." },
+  { id: "email", icon: "✉", label: "Email", handle: "nischalpanthi0007@gmail.com", href: "mailto:nischalpanthi0007@gmail.com", color: "cyan", note: "fastest — I read these between overthinking sessions." },
+  { id: "github", icon: "⌨", label: "GitHub", handle: "@Nischal-2006", href: "https://github.com/Nischal-2006", color: "purple", note: "where half-built ideas go to rest peacefully." },
+  { id: "linkedin", icon: "🔗", label: "LinkedIn", handle: "in/Nischal Panthi", href: "https://linkedin.com", color: "cyan", note: "formal version of me. wears a collar." },
+  { id: "ig", icon: "◉", label: "Instagram", handle: "@निश्चल पन्थी", href: "https://www.instagram.com/cris_nischal07/", color: "pink", note: "proof of life. mostly." },
 ];
 
 const RULES = [

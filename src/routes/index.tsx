@@ -7,6 +7,10 @@ import { Panel, StatBar, GlitchText } from "@/components/ui-bits";
 import { GuffadiTerminal, NeuralSkillMap } from "@/components/GuffadiTerminal";
 import { ConnectionProtocol } from "@/components/ConnectionProtocol";
 import avatar from "@/assets/avatar.jpg";
+import img1 from "@/assets/image.png";
+import img2 from "@/assets/image copy.png";
+import img3 from "@/assets/image copy 2.png";
+import img4 from "@/assets/image copy 3.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -452,10 +456,26 @@ function StatsPanel() {
 /* ---------------- PHOTO WALL ---------------- */
 function PhotoWall() {
   const versions = [
-    { label: "v0.1 — Childhood", hint: "This version had no idea what was coming next." },
-    { label: "v0.4 — School Phase", hint: "Loud in class, quiet in notebooks." },
-    { label: "v0.7 — Early CSIT", hint: "Expected clarity. Received confusion.exe" },
-    { label: "v1.0 — Current Build", hint: "Unstable but somehow shipping." },
+    {
+      label: "v0.1 — Childhood",
+      hint: "This version had no idea what was coming next.",
+      image: img1
+    },
+    {
+      label: "v0.4 — School Phase",
+      hint: "Loud in class, quiet in notebooks.",
+      image: img2
+    },
+    {
+      label: "v0.7 — Early CSIT",
+      hint: "Expected clarity. Received confusion.exe",
+      image: img3
+    },
+    {
+      label: "v1.0 — Current Build",
+      hint: "Unstable but somehow shipping.",
+      image: img4
+    },
   ];
   return (
     <Panel title="Different Versions of Me" tag="photo_memory.wall" accent="pink">
@@ -473,7 +493,11 @@ function PhotoWall() {
                 background: `linear-gradient(135deg, color-mix(in oklab, var(--neon-purple) 30%, transparent), color-mix(in oklab, var(--neon-cyan) 25%, transparent))`,
               }}
             />
-            <div className="absolute inset-0 flex items-center justify-center text-5xl opacity-60">👤</div>
+           <img
+  src={v.image}
+  alt={v.label}
+  className="absolute inset-0 w-full h-full object-cover"
+/>
             <div className="absolute inset-0 scanlines" />
             <div className="absolute bottom-0 inset-x-0 p-3 bg-gradient-to-t from-background to-transparent font-mono text-[11px]">
               <div className="text-neon-pink">{v.label}</div>
